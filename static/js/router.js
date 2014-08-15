@@ -1,3 +1,3 @@
 App.Router.map(function () {
-	// Add routes here.
+	this.resource('list',  { path : '/'});
 });
