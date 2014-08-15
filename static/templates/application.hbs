@@ -1,7 +1,25 @@
 <div id="container">
 	<header>
+		<label>{{input placeholder="Search..."}}</label>
 	</header>
 	<div id="main" role="main">
 		{{outlet}}
 	</div>
+	<footer>
+		<div class="flyout">
+			<p class="flyout-label">All Ratings</p>
+			<ul class="flyout-list">
+				<li>G</li>
+				<li>PG</li>
+				<li>PG-13</li>
+				<li>R</li>
+				<li>NC-17</li>
+				<li>All Ratings</li>
+			</ul>
+		</div>
+		<p class="share">
+			<a href="#">Share on Twitter</a>
+			<a href="#">Share on Facebook</a>
+		</p>
+	</footer>
 </div>
