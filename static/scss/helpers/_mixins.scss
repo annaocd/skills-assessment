@@ -1,0 +1,23 @@
+@mixin vertical-align {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+@mixin icon-chevron ($direction) {
+	position: relative;
+
+	&:before {
+		color: #000;
+		font-size: 15px;
+
+		position: absolute;
+		top: 17px;
+
+		@if $direction == 'left' {
+			left: 20px;
+		} @else if $direction == 'right' {
+			right: 20px;
+		}
+	}
+}
