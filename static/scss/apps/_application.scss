@@ -1,15 +1,42 @@
 html {
-	background: $white;
-	color: $black;
+	background: #231e1e;
+	color: #c2bfbf;
 }
 
 a {
-	color: $link-color;
+	text-decoration: none;
 }
 
-nav {
-	line-height: 30px;
-	padding: 20px;
-	background: $black;
-	color: $white;
+#container {
+	margin: auto;
+	max-width: 640px;
+	padding: 17px 10px 9px;
+}
+
+header {
+	margin-bottom: 9px;
+
+	.icon-search {
+		display: block;
+		padding: 0 7px;
+		position: relative;
+
+		&:before {
+			position: absolute;
+			left: 20px;
+			top: 8px;
+		}
+	}
+
+	input {
+		display: block;
+		background-image: linear-gradient(top, #353c46, #3d4551);
+		border: 1px solid #676464;
+		border-radius: 4px;
+		color: #b7b5b5;
+		font-size: 14px;
+		line-height: 30px;
+		padding-left: 40px;
+		width: 100%;
+	}
 }
