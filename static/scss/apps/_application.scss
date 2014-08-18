@@ -13,6 +13,10 @@ a {
 	padding: 17px 10px 9px;
 }
 
+#main {
+	margin-bottom: 7px;
+}
+
 header {
 	margin-bottom: 9px;
 
@@ -39,4 +43,49 @@ header {
 		padding-left: 40px;
 		width: 100%;
 	}
+}
+
+footer {
+	background: #1d1e1f;
+	height: 45px;
+
+	.share {
+		float: right;
+
+		&:before {
+			content: 'SHARE';
+			font-size: 12px;
+			color: #FFF;
+			position: relative;
+			top: -15px;
+		}
+
+		.icon-facebook,
+		.icon-twitter {
+			width: 40px;
+			height: 40px;
+			display: inline-block;
+			overflow: hidden;
+
+			&:before {
+				color: #55aecc;
+				font-size: 22px;
+				padding: 10px;
+			}
+		}
+
+		.icon-facebook {
+
+			&:before {
+				color: #3b5998;
+				font-size: 22px;
+				padding: 10px;
+			}
+		}
+	}
+
+}
+
+.flyout {
+	display: none;
 }
