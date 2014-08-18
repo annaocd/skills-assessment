@@ -4,20 +4,18 @@
 	transform: translateY(-50%);
 }
 
-@mixin icon-chevron ($direction) {
+// NOTE: for broad support, text-shadow with 1px weight is used
+// more time req'd to implement a thicker stroke using -webkit-text-stroke with a fallback
+@mixin text-stroke ($color) {
+	text-shadow: -1px 0 $color, 0 1px $color, 1px 0 $color, 0 -1px $color;
+}
+
+%icon-chevron {
 	position: relative;
 
 	&:before {
 		color: #000;
 		font-size: 15px;
-
 		position: absolute;
-		top: 17px;
-
-		@if $direction == 'left' {
-			left: 20px;
-		} @else if $direction == 'right' {
-			right: 20px;
-		}
 	}
 }
