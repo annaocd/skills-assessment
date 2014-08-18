@@ -4,3 +4,15 @@ $roboto : "Roboto", sans-serif;
 body {
 	font-family: $roboto;
 }
+
+h1 {
+	color: #c2bfbf;
+	font-size: 18px;
+	text-transform: uppercase;
+	padding: 10px;
+
+	em {
+		display: inline-block;
+		float: right;
+	}
+}
