@@ -22,4 +22,7 @@
 			<a href="#">Share on Facebook</a>
 		</p>
 	</footer>
+	{{#if isModalActive}}
+		{{modal-popup isShowing=isModalShowing}}
+	{{/if}}
 </div>
